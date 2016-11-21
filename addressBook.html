@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AddressBook</title>
+	<link rel="stylesheet" href="styles/style.css">
+
+	<!-- <script src="scripts/addressbook.js"></script> -->
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			<h1>Address Book</h1>
+		</div>
+		<div class="quickadd clearfix"><button id="quickAdd">+ Add</button></div>
+		<form class="quickaddForm clearfix" name="dataForm">
+			<div>
+				<label for="fullname"></label><input type="text" id="fullname" name="fullname" class="formFields" placeholder="Full Name">
+				<span id="errname" class="error">Enter first name and last name</span>
+			</div>
+
+			<label for="phone"></label><input type="text" id="phone" name="phone" class="formFields" placeholder="Phone">
+			<span id="errphone" class="error">Enter phone number</span>
+
+			<label for="address"></label><textarea name="address" id="address" name="address" cols="30" rows="10" class="formFields" placeholder="Address"></textarea>
+			<span id="erraddress" class="error">Enter address</span>
+
+			<label for="city"></label><input type="text" id="city" name="city" class="formFields" placeholder="City">
+			<span id="errcity" class="error">Enter city</span>
+
+			<label for="email"></label><input type="text" id="email" name="email" class="formFields" placeholder="E-mail">
+			<span id="erremail" class="error">Enter e-mail address</span>
+
+			<br><br>
+			<div class="buttons">
+				<button id="add" type="submit">Add Now</button>
+				<button id="cancel">Cancel</button>
+			</div>
+		</form>
+		<div class="addbook">
+			
+			
+		</div>
+	</div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
